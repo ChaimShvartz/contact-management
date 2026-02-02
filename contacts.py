@@ -56,7 +56,7 @@ class Contacts:
         self.contacts.append(Contact(name,phone_number,email))
 
     def show_all_contacts(self):
-        print(*self.contacts, sep='\n')
+        print(*self.contacts or ['No contacts yet'], sep='\n')
 
     def search_contact(self, target):
         try:
